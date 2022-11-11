@@ -1,0 +1,23 @@
+exemple 1 : renvoie la valeur de x+y (entiers)
+"""main(x,y){
+        A =  int[2];
+        A[0] = x;
+        A[1] = y;
+    return (A[0] + A[1] );
+}
+"""
+
+exemple 2 : renvoie stocke 0 dans la première case de A , et y+i dans la cas:
+"""main(x,y){
+        A =  int[x];
+	A[0] = x ;
+	i = 0 ;
+	while(A[0]) {
+		A[0] = A[0]-1 ;
+		i = i+1	;	
+		A[i] = y+i ;
+	}
+	A[0] = y ;
+    return (A[i]);
+}
+"""
