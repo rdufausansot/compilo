@@ -1,0 +1,144 @@
+main (x) {
+    x = 3;
+    p = &x;
+    *p = 12;
+
+    return (x);
+}
+
+main(x, y){
+    x = 5;
+    p = &x;
+
+    y = *p;
+
+    return(y);
+}
+
+main(x, y){
+    x = 5;
+
+    p = malloc(12);
+    *p = 4;
+    *(p+8) = 8;
+
+    x = *p;
+    y = *(p+8);
+    b = x + y;
+
+    return(b);
+}
+
+main(x, y){
+    x = 5;
+
+    p=&x;
+
+    pp = &p;
+    x = 7;
+    y = **pp;
+    
+    
+
+    return(**p);
+}
+
+__________________________________
+main(x, y){
+    x = 5;
+    y = 9;
+
+    p = &x;
+
+    return(*p);
+}
+                   ->5
+
+main(x, y){
+    x = 5;
+    y = 9;
+
+    p = &x;
+
+    y = *p;
+
+    return(y);
+}
+                   ->5
+
+main(x, y){
+    x = 5;
+    y = 9;
+
+    p = &x;
+
+    *p = 3;
+
+    return(x);
+}
+                   ->3
+
+main(x, y){
+    x = 5;
+    y = 9;
+
+    p = &x;
+    pp = &p;
+
+    return(**pp);
+}
+                   ->5
+
+main(x){
+    x = 5;
+
+    p = &x;
+    pp = &p;
+
+    **pp = 7;
+
+
+    return(x);
+}
+                   ->7
+
+main(x, y){
+    x = 5;Z
+    y = 9;
+
+    p = &x;
+    pp = &p;
+
+    **pp = 7;
+    y = **pp;
+
+    return(y);
+}
+                   ->7
+
+main(x, y){
+    x = 5;
+    y = 9;
+
+    p = malloc(4);
+    *p = 1;
+    *(p+1) = 2;
+    *(p+2) = 7;
+
+    return(*(p+2));
+}
+                   ->7
+
+main(x, y){
+
+    p = malloc(3);
+    *p = 4;
+    *(p+3) = 8;
+
+    x = *p;
+    y = *(p+3);
+    b = x + y;
+
+    return(b);
+}
+                   ->12
