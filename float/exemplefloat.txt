@@ -1,0 +1,45 @@
+
+##### Exemple pour les floats #####
+
+
+
+
+#Exemple 1
+#renvoie :
+#2.0
+#la valeur de (2^fy)*fx
+#la valeur de (2^fy)*fx si elle est supérieur à 10
+main(fy,fx){
+	print(sqrt(+ 4 . 0));
+	while(fy > 0){
+		fy = fy - 1;
+		fx = fx + fx;
+	}
+	if(fx > 10){
+	print(fx);
+	}
+	return fx 
+} 
+
+
+#Exemple 2
+#print la valeur de (fx + 1)^2
+#renvoie fx + 1
+main(fx){
+	fx = fx + 1;
+	fx = fx * fx;
+	print(fx);
+	return sqrt(fx)
+}
+
+#Exemple 3
+
+main(fx){
+	if(fx > 10){
+		print(fx);
+	}
+	if(fx > 20){
+		print(fx);
+	}
+	return fx;
+}
